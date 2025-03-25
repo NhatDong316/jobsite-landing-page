@@ -159,4 +159,10 @@
 .job-header__link:hover {
     text-decoration: underline;
 }
+
+.job-card__list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
 /* End Job List */
+
