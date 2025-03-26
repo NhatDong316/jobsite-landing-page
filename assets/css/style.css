@@ -163,6 +163,94 @@
 .job-card__list {
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    gap: 32px;
+}
+
+.job-card__item {
+    background: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid transparent;
+    transition: linear 0.2s;
+}
+.job-card__item:hover {
+    border-color: var(--primary);
+}
+
+.job-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--light-gray);
+}
+.job-card__nameWrap{
+    display: flex;
+    gap: 8px;
+}
+.job-card__name {
+    font-size: 16px;
+    font-weight: 500;
+    transform: translateY(10%);
+}
+.job-card__time{
+    padding: 4px 16px;
+    background: linear-gradient(0deg, rgba(255,255,255,0.95), rgba(255,255,255,0.95)), #021A84;
+    border-radius: 8px;
+    color: var(--primary);
+}
+
+.job-card__body{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.job-card__body::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50);
+    width: 1px;
+    height: 16px;
+    background-color: var(--light-gray);
+}
+.job-card__priceText{
+    color: var(--dark-primary);
+    font-size: 12px;
+}
+.job-card__priceNumber{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 4px;
+}
+.job-card__priceNumber span {
+    color: var(--gray);
+    font-weight: 400;
+}
+
+.job-card__footer{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.job-card__footerLeft{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.job-card__tag{
+    padding: 4px 16px;
+    background-color: var(--background);
+    border-radius: 8px;
+    color: var(--dark-primary);
+    font-size: 12px;
+}   
+.job-card__footerRight{ 
+    
 }
 /* End Job List */
 

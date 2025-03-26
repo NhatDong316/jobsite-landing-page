@@ -2,6 +2,7 @@
     --primary: #021A84;
     --secondary: #FE4C4C;
     --text: #171717;
+    --dark-primary: #010d42;
     --gray: #999999;
     --light-gray: #e5e5e5;
     --background: #F2F2F2;
@@ -50,7 +51,7 @@ html, body {
 }
 
 .heading {
-    color: var(--primary);
+    color: var(--dark-primary);
     font-weight: 700;
     font-size: 34px;
 }
