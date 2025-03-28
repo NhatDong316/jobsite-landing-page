@@ -164,6 +164,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 32px;
+    margin-top: 40px;
 }
 
 .job-card__item {
@@ -250,7 +251,12 @@
     font-size: 12px;
 }   
 .job-card__footerRight{ 
-    
+    padding: 4px 16px;
+    border-radius: 8px;
+    background-color: var(--secondary);
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
 }
 /* End Job List */
 
